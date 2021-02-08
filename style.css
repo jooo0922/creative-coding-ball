@@ -1,0 +1,27 @@
+* {
+  user-select: none; /* 드래그나 더블클릭 시에 텍스트가 선택이 되지 않도록 설정 */
+  -ms-user-select: none; /* 인터넷 익스플로러에도 크로스 브라우징하기 위함. 이제는 안써도 되겠지. */
+  outline: 0; /* 너비 등의 레이아웃에 관여하지 않는 테두리 제거 */
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 표준 기능이 아님. IOS 웹킷에서 터치 시에 등장하는 하이라이트를 제거하기 위함 */
+}
+
+/* 그냥 브라우저 사이즈에 100%로 해준다는 거 */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 영역을 넘는 부분은 숨기기 */
+  background-color: #161e38;
+}
+
+/* 캔버스 크기도 브라우저에 맞게 100%로 해준거. 끝. */
+canvas {
+  width: 100%;
+  height: 100%;
+}
